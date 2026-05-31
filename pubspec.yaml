@@ -1,0 +1,42 @@
+name: dog_shit_detector
+description: AI-powered dog shit detector using YOLOv8 ONNX model with vibration and voice alerts.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  image_picker: ^1.1.2
+  onnxruntime: ^1.1.0
+  flutter_vibrate: ^1.3.0
+  flutter_tts: ^4.2.1
+  camera: ^0.12.0+1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  web:
+    generate: true
+  windows:
+    generate: true
+  macos:
+    generate: true
+  image_path: "assets/A_modern_app_icon_for_a_dog_po_2026-05-31T04-42-21.png"
+  adaptive_icon_background: "#8B4513"
+  adaptive_icon_foreground: "assets/A_modern_app_icon_for_a_dog_po_2026-05-31T04-42-21.png"
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/models/best.onnx
